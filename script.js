@@ -46,6 +46,9 @@ searchBtn.addEventListener('click', function() {
     else if(inputKey === keys.apiKey || inputKey === keys.authToken) {
         getGeo(inputField.value);
     }
+    else{
+        alert('Please enter a valid key!');
+    }
 })
 
 function generateAuthToken(length = 32) {
@@ -72,3 +75,4 @@ async function getCityTemp(lon, lat) {
     let resp = await output.json();
     temp.innerText = `Temperature: ${resp.current_weather.temperature + resp.current_weather_units.temperature}`;
 }
+
