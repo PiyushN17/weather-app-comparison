@@ -18,6 +18,9 @@
 - **Open-Meteo Weather API** returns current temperature using coordinates  
 - Both APIs are free and do not require authentication  
 
+**Purpose of the Project**
+- The main purpose of this project is to **demonstrate the conceptual difference between an API key and an auth token**, including how API keys can represent long-lived access while auth tokens are short-lived and time-bound.  
+
 **Features Implemented**
 - Generates random API keys and temporary auth tokens  
 - Auth tokens expire after 60 seconds with a countdown  
