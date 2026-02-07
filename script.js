@@ -56,8 +56,6 @@ function generateAuthToken(length = 32) {
   return Array.from(array, x => chars[x % chars.length]).join('');
 }
 
-
-
 async function getGeo(cityName) {
     const geoAPI = `https://geocoding-api.open-meteo.com/v1/search?name=${cityName}&count=1`;
 
