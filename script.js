@@ -40,6 +40,9 @@ searchBtn.addEventListener('click', function() {
     if(inputField.value === '') {
         alert('Please enter city name');
     }
+    else if(timer.innerText === `Time Remaining (Auth Token): 0`) {
+        alert('Please regenerate Auth Token!');
+    }
     else if(inputKey === keys.apiKey || inputKey === keys.authToken) {
         getGeo(inputField.value);
     }
